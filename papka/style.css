@@ -1,0 +1,94 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  max-width: 1200px;
+}
+
+.container {
+  padding: 0 auto;
+}
+
+.top__title {
+  display: block;
+  text-align: center;
+}
+
+.top__inputlist {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.top__inputlist--input {
+  width: 300px;
+  margin-bottom: 20px;
+}
+
+.bottom__list {
+  padding-left: 0;
+  flex-direction: column;
+  margin-bottom: 0;
+}
+.bottom__list2 {
+  padding-left: 0;
+  margin-top: 0;
+  flex-direction: column;
+}
+
+.bottom__item {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 1px;
+}
+
+.bottom__item--search {
+  min-height: 20px;
+  min-width: 25%;
+  border: 1px solid black;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.bottom__item--subtitle {
+  display: flex;
+  width: 25%;
+  border: 1px solid black;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  overflow: auto;
+}
+
+.subtitle1,
+.subtitle2,
+.subtitle3,
+.subtitle4 {
+  border: 1px solid rgb(7, 136, 18);
+}
+
+.top__inputlist--label {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.just-validate-error-label {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  text-align: center;
+  display: flex;
+  justify-content: flex-start;
+  width: 800px;
+}

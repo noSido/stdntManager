@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
+  <script defer src="main.js"></script>
+  <script defer src="just-validate.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main class="main">
+    <div class="container">
+      <div class="info">
+        <div class="info__top">
+          <h1 class="top__title">
+            Таблица с информацией о студентах
+          </h1>
+          <form class="top__inputlist" id="form">
+            <label class="top__inputlist--label" for="name">
+              Имя
+            <input class="top__inputlist--input" type="text" id="name" required>
+            </label>
+            <label class="top__inputlist--label" for="surname">
+              Фамилия
+            <input class="top__inputlist--input" type="text" id="surname" required>
+            </label>
+            <label class="top__inputlist--label" for="fathername">
+              Отчество
+            <input class="top__inputlist--input" type="text" id="fathername" required>
+            </label>
+            <label class="top__inputlist--label" for="birthday">
+              Дата рождения
+            <input class="top__inputlist--input" type="date" id="birthday" min="1900-01-01" required>
+            </label>
+            <label class="top__inputlist--label" for="studystart">
+              Год начала обучения
+            <input class="top__inputlist--input" type="number" id="studystart" min="2000" required>
+            </label>
+            <label class="top__inputlist--label" for="faculty">
+              Факультет
+            <input class="top__inputlist--input" type="text" id="faculty" required>
+            </label>
+            <button class="top__inputlist--btn">Тык</button>
+          </form>
+        </div>
+        <div class="info__bottom" id="info__bottom">
+          <ul class="bottom__list" id="bottom__list">
+            <li class="bottom__item bottom__item--filter">
+              <input class="bottom__item--search search1" id="NameFilter" type="text" placeholder="Фильтр по ФИО"></input>
+              <input class="bottom__item--search search2" id="FacultyFilter" type="text" placeholder="Фильтр по факультету"></input>
+              <input class="bottom__item--search search3" id="BDFilter" type="text" placeholder="Фильтр по ДР"></input>
+              <input class="bottom__item--search search4" id="StartStudyFilter" type="text" placeholder="Фильтр по году обучения"></input>
+            </li>
+            <li class="bottom__item">
+              <div class="bottom__item--subtitle subtitle1" id="subtitle1">ФИО студента</div>
+              <div class="bottom__item--subtitle subtitle2" id="subtitle2">Факультет</div>
+              <div class="bottom__item--subtitle subtitle3" id="subtitle3">Дата рождения и возраст</div>
+              <div class="bottom__item--subtitle subtitle4" id="subtitle4">Годы обучения и номер курса</div>
+            </li>
+          </ul>
+          <ul class="bottom__list2" id="bottom__list2">
+          </ul>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>
